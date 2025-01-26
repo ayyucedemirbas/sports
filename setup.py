@@ -1,4 +1,5 @@
 import pathlib
+
 import setuptools
 
 # The directory containing this file
@@ -9,7 +10,7 @@ README = (HERE / "README.md").read_text(encoding="utf-8")
 
 setuptools.setup(
     name="sports",
-    version='0.1.0',
+    version="0.1.0",
     python_requires=">=3.8",
     description="",
     long_description=README,
@@ -17,7 +18,7 @@ setuptools.setup(
     url="https://github.com/roboflow/sports",
     author="Piotr Skalski",
     author_email="piotr.skalski92@gmail.com",
-    license='MIT',
+    license="MIT",
     packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires=[
@@ -29,26 +30,26 @@ setuptools.setup(
         "scikit-learn",
         "tqdm",
         "sentencepiece",
-        "protobuf"
+        "protobuf",
     ],
     extras_require={
-        'tests': [
-            'pytest',
+        "tests": [
+            "pytest",
         ]
     },
     classifiers=[
-        'Development Status :: 4 - Beta',
-        'Intended Audience :: Developers',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3 :: Only',
-        'Topic :: Software Development',
-        'Topic :: Scientific/Engineering',
-        'Typing :: Typed',
-        'Operating System :: Microsoft :: Windows',
-        'Operating System :: POSIX',
-        'Operating System :: Unix',
-        'Operating System :: MacOS'
-    ]
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3 :: Only",
+        "Topic :: Software Development",
+        "Topic :: Scientific/Engineering",
+        "Typing :: Typed",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX",
+        "Operating System :: Unix",
+        "Operating System :: MacOS",
+    ],
 )
